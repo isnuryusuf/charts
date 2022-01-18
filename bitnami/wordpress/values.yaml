@@ -102,7 +102,7 @@ wordpressPassword: ""
 ## NOTE: Must contain key `wordpress-password`
 ## NOTE: When it's set, the `wordpressPassword` parameter is ignored
 ##
-existingSecret: ""
+existingSecret: "password"
 ## @param wordpressEmail WordPress user email
 ##
 wordpressEmail: user@example.com
@@ -114,7 +114,7 @@ wordpressFirstName: FirstName
 wordpressLastName: LastName
 ## @param wordpressBlogName Blog name
 ##
-wordpressBlogName: User's Blog!
+wordpressBlogName: Yuk nge-Blog!
 ## @param wordpressTablePrefix Prefix to use for WordPress database tables
 ##
 wordpressTablePrefix: wp_
@@ -198,7 +198,7 @@ smtpProtocol: ""
 smtpExistingSecret: ""
 ## @param allowEmptyPassword Allow the container to be started with blank passwords
 ##
-allowEmptyPassword: true
+allowEmptyPassword: false
 ## @param allowOverrideNone Configure Apache to prohibit overriding directives with htaccess files
 ##
 allowOverrideNone: false
@@ -942,7 +942,7 @@ mariadb:
     rootPassword: ""
     database: bitnami_wordpress
     username: bn_wordpress
-    password: ""
+    password: "password"
   ## MariaDB Primary configuration
   ##
   primary:
@@ -974,7 +974,7 @@ externalDatabase:
   user: bn_wordpress
   ## @param externalDatabase.password External Database user password
   ##
-  password: ""
+  password: "password"
   ## @param externalDatabase.database External Database database name
   ##
   database: bitnami_wordpress
