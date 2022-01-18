@@ -505,13 +505,13 @@ service:
   type: ClusterIP
   ## @param service.port WordPress service HTTP port
   ##
-  ## yusuf ## port: 80
+  port: 80
   ## @param service.httpsPort WordPress service HTTPS port
   ##
-  ## yusuf ## httpsPort: 443
+  httpsPort: 443
   ## @param service.httpsTargetPort Target port for HTTPS
   ##
-  ## yusuf ### httpsTargetPort: https
+  httpsTargetPort: https
   ## Node ports to expose
   ## @param service.nodePorts.http Node port for HTTP
   ## @param service.nodePorts.https Node port for HTTPS
