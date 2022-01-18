@@ -31,7 +31,7 @@ questions:
     type: string
     label: MariaDB Image Tag
 - variable: wordpressUsername
-  default: "user"
+  default: "wp-admin2"
   description: "User of the application"
   type: string
   required: true
@@ -59,30 +59,30 @@ questions:
   show_subquestion_if: true
   group: "Database Settings"
   subquestions:
-  - variable: mariadb.db.name
-    default: "wordpress"
+  - variable: mariadb.auth.database
+    default: "bitnami_wordpress2"
     description: "Database name to create"
     type: string
     label: MariaDB Database
-  - variable: mariadb.db.user
-    default: "wordpress"
+  - variable: mariadb.auth.username
+    default: "bn_wordpress2"
     description: "Database user to create"
     type: string
     label: MariaDB User
-  - variable: mariadb.mariadbPassword
+  - variable: mariadb.auth.password
     default: ""
     description: "password will be auto-generated if not specified"
     type: password
     label: MariaDB Password
 - variable: externalDatabase.host
-  default: ""
+  default: "localhost"
   description: "Host of the external database"
   type: string
   label: External Database Host
   show_if: "mariadb.enabled=false"
   group: "Database Settings"
 - variable: externalDatabase.user
-  default: ""
+  default: "bn_wordpress2"
   description: "Existing username in the external DB"
   type: string
   label: External Database username
@@ -167,8 +167,8 @@ questions:
     type: hostname
     required: true
     label: Hostname
-- variable: serviceType
-  default: "NodePort"
+- variable: service.type
+  default: "ClusterIP"
   description: "WordPress Service type"
   type: enum
   show_if: "ingress.enabled=false"

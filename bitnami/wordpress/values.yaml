@@ -955,7 +955,7 @@ mariadb:
     ##
     persistence:
       enabled: true
-      storageClass: ""
+      storageClass: "cephfs-storage"
       accessModes:
         - ReadWriteOnce
       size: 8Gi
