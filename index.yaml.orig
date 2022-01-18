@@ -9,7 +9,7 @@ entries:
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: ba3e4fc7a6fb0022fb5fa2fd7a198b2055727a02ea83575f693e4b02007dca4b
-    home: https://github.com/isnuryusuf/charts/tree/master/bitnami/common
+    home: https://github.com/bitnami/charts/tree/master/bitnami/common
     icon: https://bitnami.com/downloads/logos/bitnami-mark.png
     keywords:
     - common
@@ -22,7 +22,7 @@ entries:
       name: Bitnami
     name: common
     sources:
-    - https://github.com/isnuryusuf/charts
+    - https://github.com/bitnami/charts
     - https://www.bitnami.com/
     urls:
     - https://github.com/isnuryusuf/charts/releases/download/common-1.10.3/common-1.10.3.tgz
@@ -39,7 +39,7 @@ entries:
       available MariaDB cluster.
     digest: e886b5b2d794ececd2b376a119ccfabbc41eb39200e5c691b07f06a3acbde0c0
     engine: gotpl
-    home: https://github.com/isnuryusuf/charts/tree/master/bitnami/mariadb
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mariadb
     icon: https://bitnami.com/assets/stacks/mariadb/img/mariadb-stack-220x234.png
     keywords:
     - mariadb
@@ -67,7 +67,7 @@ entries:
     description: Chart for Memcached
     digest: 9065e687505a92536d5c808766396c3e9a41a53cf2f4e13a21a04cb9f7b1bb4f
     engine: gotpl
-    home: https://github.com/isnuryusuf/charts/tree/master/bitnami/memcached
+    home: https://github.com/bitnami/charts/tree/master/bitnami/memcached
     icon: https://bitnami.com/assets/stacks/memcached/img/memcached-stack-220x234.png
     keywords:
     - memcached
@@ -91,7 +91,7 @@ entries:
     description: Web publishing platform for building blogs and websites.
     digest: d68deec1c116822943686620b07a8462dfb2374e4f72cc484a087915dc3c8b5b
     engine: gotpl
-    home: https://github.com/isnuryusuf/charts/tree/master/bitnami/wordpress
+    home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
     - application
