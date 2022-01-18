@@ -135,7 +135,7 @@ questions:
     type: string
     label: Existing Persistent Volume Claim for MariaDB
 - variable: persistence.enabled
-  default: false
+  default: true
   description: "Enable persistent volume for WordPress"
   type: boolean
   required: true
@@ -149,7 +149,7 @@ questions:
     type: string
     label: WordPress Volume Size
   - variable: persistence.storageClass
-    default: ""
+    default: "cephfs-storage"
     description: "If undefined or null, uses the default StorageClass. Default to null"
     type: storageclass
     label: Default StorageClass for WordPress

@@ -376,8 +376,8 @@ resources:
 ## @param containerPorts.https WordPress HTTPS container port
 ##
 containerPorts:
-  http: 8080
-  https: 8443
+  http: 80
+  https: 443
 ## Configure Pods Security Context
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod
 ## @param podSecurityContext.enabled Enabled WordPress pods' Security Context
