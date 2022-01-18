@@ -85,7 +85,7 @@ image:
   pullSecrets: []
   ## Enable debug mode
   ##
-  debug: false
+  debug: true
 
 ## @section WordPress Configuration parameters
 ## WordPress settings based on environment variables
@@ -93,28 +93,28 @@ image:
 
 ## @param wordpressUsername WordPress username
 ##
-wordpressUsername: user
+wordpressUsername: wp-admin
 ## @param wordpressPassword WordPress user password
 ## Defaults to a random 10-character alphanumeric string if not set
 ##
-wordpressPassword: ""
+wordpressPassword: "password123"
 ## @param existingSecret Name of existing secret containing WordPress credentials
 ## NOTE: Must contain key `wordpress-password`
 ## NOTE: When it's set, the `wordpressPassword` parameter is ignored
 ##
-existingSecret: "password"
+existingSecret: ""
 ## @param wordpressEmail WordPress user email
 ##
 wordpressEmail: user@example.com
 ## @param wordpressFirstName WordPress user first name
 ##
-wordpressFirstName: FirstName
+wordpressFirstName: NamaDepan
 ## @param wordpressLastName WordPress user last name
 ##
-wordpressLastName: LastName
+wordpressLastName: NamaBelakang
 ## @param wordpressBlogName Blog name
 ##
-wordpressBlogName: Yuk nge-Blog!
+wordpressBlogName: Yuk nge-Blog2!
 ## @param wordpressTablePrefix Prefix to use for WordPress database tables
 ##
 wordpressTablePrefix: wp_
@@ -942,7 +942,7 @@ mariadb:
     rootPassword: ""
     database: bitnami_wordpress
     username: bn_wordpress
-    password: "password"
+    password: "password123"
   ## MariaDB Primary configuration
   ##
   primary:
@@ -974,7 +974,7 @@ externalDatabase:
   user: bn_wordpress
   ## @param externalDatabase.password External Database user password
   ##
-  password: "password"
+  password: "password123"
   ## @param externalDatabase.database External Database database name
   ##
   database: bitnami_wordpress
