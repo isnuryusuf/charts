@@ -939,7 +939,7 @@ mariadb:
   ##      https://github.com/bitnami/bitnami-docker-mariadb/blob/master/README.md#creating-a-database-on-first-run
   ##      https://github.com/bitnami/bitnami-docker-mariadb/blob/master/README.md#creating-a-database-user-on-first-run
   auth:
-    rootPassword: ""
+    rootPassword: "password123"
     database: bitnami_wordpress
     username: bn_wordpress
     password: "password123"
