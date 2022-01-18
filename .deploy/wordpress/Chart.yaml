@@ -1,0 +1,24 @@
+annotations:
+  category: CMS
+apiVersion: v2
+appVersion: 5.8.3
+description: Web publishing platform for building blogs and websites.
+engine: gotpl
+home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
+icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+keywords:
+- application
+- blog
+- cms
+- http
+- php
+- web
+- wordpress
+maintainers:
+- email: containers@bitnami.com
+  name: Bitnami
+name: wordpress
+sources:
+- https://github.com/bitnami/bitnami-docker-wordpress
+- https://wordpress.org/
+version: 12.3.3
